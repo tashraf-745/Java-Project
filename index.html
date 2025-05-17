@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global Migration Map</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Flex container for top info box and map -->
+  <section class="top-map-container">
+    <!-- Top Info Box -->
+    <div class="top-box">
+      <h2 class="main-title1">Hotspots of Hope</h2>
+<p class="main-title2">Where Migrants Want to Go and Why?</p>
+
+
+      <button class="collapsible">ABOUT</button>
+      <div class="content">
+        <p>This map highlights global migration trends by combining economic and social indicators...</p>
+      </div>
+
+      <button class="collapsible">SOURCE</button>
+      <div class="content">
+        <p>Data from Henley & Partners, OECD reports, and migration indices...</p>
+      </div>
+    </div>
+
+    <!-- Map Section -->
+    <div id="map-container">
+      <div id="map"></div>
+      
+    </div>
+  </section>
+
+  <!-- Bottom Box -->
+  <section class="bottom-box">
+    <h2>Country Insights</h2>
+
+    <div class="button-grid">
+      <button class="country-btn" data-country="Switzerland">1. Switzerland</button>
+      <button class="country-btn" data-country="Singapore">2. Singapore</button>
+      <button class="country-btn" data-country="USA">3. USA</button>
+      <button class="country-btn" data-country="Australia">4. Australia</button>
+      <button class="country-btn" data-country="Canada">5. Canada</button>
+      <button class="country-btn" data-country="United Kingdom">6. UK</button>
+      <button class="country-btn" data-country="United Arab Emirates">7. UAE</button>
+      <button class="country-btn" data-country="New Zealand">8. New Zealand</button>
+      <button class="country-btn" data-country="Austria">9. Austria</button>
+      <button class="country-btn" data-country="Italy">10. Italy</button>
+      <button class="country-btn" data-country="Hong Kong">11. Hong Kong</button>
+      <button class="country-btn" data-country="Latvia">12. Latvia</button>
+      <button class="country-btn" data-country="Malta">13. Malta</button>
+      <button class="country-btn" data-country="Hungary">14. Hungary</button>
+      <button class="country-btn" data-country="Greece">15. Greece</button>
+      <button class="country-btn" data-country="Portugal">16. Portugal</button>
+    </div>
+
+    <div id="country-info" class="country-info-box">
+      <p>Select a country to view details.</p>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="map.js"></script>
+</body>
+</html>
